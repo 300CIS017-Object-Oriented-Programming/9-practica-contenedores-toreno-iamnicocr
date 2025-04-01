@@ -3,5 +3,22 @@
 //
 
 #include "Torneo.h"
+void Torneo::registrarVideojuego(){
 
+}
+void Torneo::registrarJugador(){
+
+}
+void Torneo::inscribirJugadorEnVideoJuego(){
+
+}
+void Torneo::mostrarVideojuegosDeJugador() {
+
+}
+void TorneoinicializarVideoJuegos(){
+
+};
+void inicializarJugadores(){
+
+};
 

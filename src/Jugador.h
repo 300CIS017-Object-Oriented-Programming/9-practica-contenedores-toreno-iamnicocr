@@ -5,11 +5,10 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
 #include <string>
+#include <iostream>
 #include <vector>
 #include "Videojuego.h"
 using namespace std;
-
-
 
 class Jugador {
 private:

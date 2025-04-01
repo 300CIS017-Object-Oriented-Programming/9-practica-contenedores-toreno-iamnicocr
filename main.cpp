@@ -6,6 +6,5 @@
 #include "src/Torneo.h"
 
 int main() {
-
   return 0;
  }

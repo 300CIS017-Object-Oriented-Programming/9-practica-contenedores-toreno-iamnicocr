@@ -6,6 +6,7 @@
 #define VIDEOJUEGO_H
 
 #include <string>
+#include <iostream>
 using namespace std;
 
 class Videojuego {
