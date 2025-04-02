@@ -4,6 +4,13 @@
 
 #include "Videojuego.h"
 
+Videojuego::Videojuego() {
+    this -> codigo = "Undefined";
+    this -> nombre = "Undefined";
+    this -> codigo = "Undefined";
+    this -> nivelDificultad = 0;
+}
+
 Videojuego::Videojuego(string codigo, string nombre, string genero, int nivelDificultad) {
     this -> codigo = codigo;
     this -> nombre = nombre;

@@ -16,6 +16,7 @@ private:
   string nivelRanking;
   vector<Videojuego*> videoJuegosInscritos;
   public:
+    Jugador();
     Jugador(string, int);
     void mostrar();
 };
