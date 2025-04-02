@@ -20,3 +20,7 @@ Videojuego::Videojuego(string codigo, string nombre, string genero, int nivelDif
 void Videojuego::mostrar() {
     cout << codigo <<" | "<< nombre <<" | "<< genero <<" | "<< nivelDificultad << endl; ;
 }
+
+string Videojuego::getCodigo() {
+    return codigo;
+}

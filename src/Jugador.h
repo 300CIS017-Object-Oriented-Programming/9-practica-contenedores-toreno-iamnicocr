@@ -19,6 +19,7 @@ private:
     Jugador();
     Jugador(string, int);
     void mostrar();
+    string getNick();
 };
 
 

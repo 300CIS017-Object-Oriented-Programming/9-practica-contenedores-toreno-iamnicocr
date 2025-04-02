@@ -18,20 +18,36 @@ void Torneo::registrarVideojuego() {
         cin >> nivelDificultad;
     }
     Videojuego *gameTemp = new Videojuego(codigo, nombre, genero, nivelDificultad);
-    videoJuegosDisponibles[] = gameTemp;
+
 
 }
 void Torneo::registrarJugador(){
-    string player, game;
-    bool flag = true;
+    string nick, game;
+    bool flag = false;
     cout << "Indique el codigo del jugador a registrar \n";
-    cin >> player;
+    cin >> nick;
+
+    for(auto it = jugadoresRegistrados.begin(); it != jugadoresRegistrados.end(); ++it) {
+        Jugador* player = it->second;
+        if (player->getNick() == nick) {
+            flag = true;
+        }
+    }
+    if (flag) {
+        cout <<"El usuario no existe \n";
 
     while(flag) {
         cout << "Indique el codigo del juego \n";
         cin >> game;
 
-        for (int i=0; i < videoJuegosDisponibles.size(); i++) {
+        for(auto it = videoJuegosDisponibles.begin(); it != videoJuegosDisponibles.end(); ++it) {
+            Videojuego* juego = it ->second;
+            if (juego->getCodigo() == game) {
+                flag = false;
+            }
+        if (not flag) {
+
+            }
 
         }
     }
@@ -46,8 +62,8 @@ void Torneo::mostrarVideojuegosDeJugador() {
 }
 void TorneoinicializarVideoJuegos(){
 
-};
+}
 void inicializarJugadores(){
 
-};
+}
 

@@ -23,3 +23,7 @@ void Jugador::mostrar(){
     cout << "- " << videoJuegosInscritos[i] << endl;
   }
 }
+
+string Jugador::getNick() {
+  return nickname;
+}

@@ -19,6 +19,7 @@ class Videojuego {
    Videojuego();
    Videojuego(string, string, string, int);
    void mostrar();
+    string getCodigo();
 };
 
 
